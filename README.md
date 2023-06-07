@@ -1,5 +1,5 @@
 ## Overview
-In this challenge, I utilized my knowledge of SparkSQL to determine key metrics about home sales data. By leveraging Spark SQL, I performed various transformations, aggregations, and calculations on the home sales data to extract valuable insights and key metrics.I also used Spark to create temporary views, partition the data, cache and uncache a temporary table, and verify that the table was uncached.
+In this project, I utilized my knowledge of SparkSQL to determine key metrics about home sales data. By leveraging Spark SQL, I performed various transformations, aggregations, and calculations on the home sales data to extract valuable insights and key metrics.I also used Spark to create temporary views, partition the data, cache and uncache a temporary table, and verify that the table was uncached.
 
 ## Tools used
 ![SPARK](https://img.shields.io/badge/Spark%20AR-FF5C83?style=for-the-badge&logo=SparkAR&logoColor=white)
