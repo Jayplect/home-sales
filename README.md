@@ -7,21 +7,21 @@ In this challenge, I utilized my knowledge of SparkSQL to determine key metrics 
 ## Project Steps
 To begin, I imported the necessary PySpark SQL functions for this assignment. Following that, I read the home_sales_revised.csv data into a Spark DataFrame using the appropriate format and file reading functions.
  
-- Data insights  
-After performing initial exploration of the loaded dataFrame to understand its structure and contents, I created a temporary table called `home_sales` and then SQL queries were written to calculate various key metrics from the home sales data in order to answer the following questions:
+- #### Data insights  
+   After performing initial exploration of the loaded dataFrame to understand its structure and contents, I created a temporary table called `home_sales` and then SQL queries were written to calculate various key metrics from the home sales data in order to answer the following questions:
 
-  - What is the average price for a four-bedroom house sold for each year?
-  - What is the average price of a home for each year it was built that has three bedrooms and three bathrooms?
-  - What is the average price of a home for each year that has three bedrooms, three bathrooms, two floors, and is greater than or equal to 2,000 square feet?
-  - What is the "view" rating for homes costing more than or equal to $350,000? I also determined the run time for this query.
+     - What is the average price for a four-bedroom house sold for each year?
+     - What is the average price of a home for each year it was built that has three bedrooms and three bathrooms?
+     - What is the average price of a home for each year that has three bedrooms, three bathrooms, two floors, and is greater than or equal to 2,000 square feet?
+     - What is the "view" rating for homes costing more than or equal to $350,000? I also determined the run time for this query.
 
-- Data Storage and Process Optimization  
-Here, I explored the overall performance of cached data vs. uncached data under the following steps:
- 
-  - Cache the temporary table home_sales and check if temporary table is cached.
-  - Using the cached data, run the query that filters out the view ratings with an average price of greater than or equal to $350,000. Determine the runtime and compare it to uncached runtime.
-  - Partition by the "date_built" field on the formatted parquet home sales data and create a temporary table for the parquet data.
-  - Run the query that filters out the view ratings with an average price of greater than or equal to $350,000. Determine the runtime and compare it to uncached runtime.
+- #### Data Storage and Process Optimization  
+   Here, I explored the overall performance of cached data vs. uncached data under the following steps:
+
+     - Cache the temporary table home_sales and check if temporary table is cached.
+     - Using the cached data, run the query that filters out the view ratings with an average price of greater than or equal to $350,000. Determine the runtime and compare it to uncached runtime.
+     - Partition by the "date_built" field on the formatted parquet home sales data and create a temporary table for the parquet data.
+     - Run the query that filters out the view ratings with an average price of greater than or equal to $350,000. Determine the runtime and compare it to uncached runtime.
 
 ## Summary
 
